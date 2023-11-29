@@ -1,29 +1,63 @@
 //your JS code here. If required.
-const inputs = document.querySelectorAll('.code');
+let one= document.getElementById("code-1");
+let two= document.getElementById("code-2");
+let three=document.getElementById("code-3");
+let four=document.getElementById("code-4");
+let five=document.getElementById("code-5");
+let six=document.getElementById("code-6");
+
+one.addEventListener("keyup",(event)=>{
+	//after entering the first foucs should be 
+	
+		two.focus();
+	
+});
 
 
-   for(let i = 0 ; i< inputs.length;i++){
-
-    const currentInput = inputs[i];
-
-    // Next input focus
-    currentInput.addEventListener("input",function(){
-    
-      if(this.value.length === 1 && i < inputs.length-1){
-
-          inputs[i+1].focus();
-      }
-    })
-
-    // Previous Focus
-
-    currentInput.addEventListener("keydown",function(e){
-
-      if(e.key === 'Backspace' && i > 0 && this.value.length === 0){
-
-        inputs[i-1].focus();
-      }
-    })
+two.addEventListener("keyup", (event) => {
+  // if backspace is pressed in the second, focus on the first
+  if (event.key === "Backspace") {
+    one.focus();
+  } else {
+    // after entering a value in the second, focus on the third
+    three.focus();
+  }
+});
 
 
-   }
+three.addEventListener("keyup", (event) => {
+  // if backspace is pressed in the second, focus on the first
+  if (event.key === "Backspace") {
+    two.focus();
+  } else {
+    // after entering a value in the second, focus on the third
+    four.focus();
+  }
+});
+
+four.addEventListener("keyup", (event) => {
+  // if backspace is pressed in the second, focus on the first
+  if (event.key === "Backspace") {
+    three.focus();
+  } else {
+    // after entering a value in the second, focus on the third
+    five.focus();
+  }
+});
+
+five.addEventListener("keyup", (event) => {
+  // if backspace is pressed in the second, focus on the first
+  if (event.key === "Backspace") {
+    four.focus();
+  } else {
+    // after entering a value in the second, focus on the third
+    six.focus();
+  }
+});
+
+six.addEventListener("keyup", (event) => {
+  // if backspace is pressed in the second, focus on the first
+  if (event.key === "Backspace") {
+    five.focus();
+  } 
+});

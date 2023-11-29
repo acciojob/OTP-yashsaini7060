@@ -8,16 +8,30 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<h1 id="verification_heading">Verify Your Account</h1>
-    <p id="verification_subtext">We emailed you the six digit code to acciojob@email.com Enter the code below to confirm tyout email address</p>
-    <div class="code-container">
-        <input class="code" id="code-1" type="text" maxlength="1"  oninput="focusNext(this)" onkeydown="focusPrevious(this)" placeholder="0">
-        <input class="code" id="code-2" type="text" maxlength="1" oninput="focusNext(this)" onkeydown="focusPrevious(this)" placeholder="0">
-        <input class="code" id="code-3" type="text" maxlength="1" oninput="focusNext(this)" onkeydown="focusPrevious(this)" placeholder="0">
-        <input class="code" id="code-4" type="text" maxlength="1" oninput="focusNext(this)" onkeydown="focusPrevious(this)" placeholder="0">
-        <input class="code" id="code-5" type="text" maxlength="1" oninput="focusNext(this)" onkeydown="focusPrevious(this)" placeholder="0">
-        <input class="code" id="code-6" type="text" maxlength="1" oninput="focusNext(this)" onkeydown="focusPrevious(this)" placeholder="0">
-    </div>
+	<div class="otpBox">
+		<h2 id="verification_heading">Verify Your Account</h2>
+		<h6 id="verification_subtext">
+			we emailed yout the six digit code 
+			to acciojob@email.com. Enter the code below to confirm 
+			your email address.
+		</h6>
+		<div class="code-container">
+			<input  class="code"  type="text" maxlength="1" 
+				id="code-1"required>
+			<input class="code" type="text" maxlength="1" 
+				id="code-2"required>
+			<input class="code" type="text" maxlength="1" 
+				id="code-3"required>
+			<input class="code" type="text" maxlength="1" 
+				id="code-4"required>
+			<input class="code" type="text" maxlength="1" 
+				id="code-5"required>
+			<input class="code" type="text" maxlength="1" 
+				id="code-6"required>
+		</div>
+		
+	
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
